@@ -15,14 +15,12 @@ class MainViewController: UIViewController {
         view.backgroundColor = .white
         
         iTunesAPI.shared.fetchPodcasts() { response, error in
-            if let error = error {
-                print(error)
+            if let _ = error {
                 return
             }
-            guard let response = response else {
+            guard let _ = response else {
                 return
             }
-            print(response)
         }
     }
 }

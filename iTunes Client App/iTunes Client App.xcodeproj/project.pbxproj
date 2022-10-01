@@ -12,6 +12,7 @@
 		ED180E6828E815D8001D594F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED180E6728E815D8001D594F /* MainViewController.swift */; };
 		ED180E6D28E815D9001D594F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED180E6C28E815D9001D594F /* Assets.xcassets */; };
 		ED180E7028E815D9001D594F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED180E6E28E815D9001D594F /* LaunchScreen.storyboard */; };
+		ED180E8328E8258F001D594F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED180E8228E8258F001D594F /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		ED180E6C28E815D9001D594F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED180E6F28E815D9001D594F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED180E7128E815D9001D594F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED180E8228E8258F001D594F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		ED180E7D28E8190F001D594F /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				ED180E8128E82574001D594F /* View */,
 				ED180E7E28E8191B001D594F /* Controller */,
 			);
 			path = Main;
@@ -126,6 +129,14 @@
 				ED180E6728E815D8001D594F /* MainViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		ED180E8128E82574001D594F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED180E8228E8258F001D594F /* MainView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED180E6828E815D8001D594F /* MainViewController.swift in Sources */,
+				ED180E8328E8258F001D594F /* MainView.swift in Sources */,
 				ED180E6428E815D8001D594F /* AppDelegate.swift in Sources */,
 				ED180E6628E815D8001D594F /* SceneDelegate.swift in Sources */,
 			);

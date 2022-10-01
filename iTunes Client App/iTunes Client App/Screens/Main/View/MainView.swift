@@ -23,7 +23,7 @@ final class MainView: UIView {
         super.init(frame: .zero)
         backgroundColor = .gray
         
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        collectionView.register(PodcastCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         setupCollectionViewLayout()
     }
     
@@ -47,5 +47,11 @@ final class MainView: UIView {
                                    andDataSource dataSource: UICollectionViewDataSource) {
         collectionView.delegate = delegate
         collectionView.dataSource = dataSource
+    }
+    
+    func refresh() {
+        DispatchQueue.main.async {
+            self.collectionView.reloadData()
+        }
     }
 }

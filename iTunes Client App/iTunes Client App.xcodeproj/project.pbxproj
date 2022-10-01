@@ -12,6 +12,9 @@
 		ED180E6828E815D8001D594F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED180E6728E815D8001D594F /* MainViewController.swift */; };
 		ED180E6D28E815D9001D594F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED180E6C28E815D9001D594F /* Assets.xcassets */; };
 		ED180E7028E815D9001D594F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED180E6E28E815D9001D594F /* LaunchScreen.storyboard */; };
+		ED180E8728E82642001D594F /* iTunesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED180E8628E82642001D594F /* iTunesAPI.swift */; };
+		ED180E8A28E8308A001D594F /* PodcastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED180E8928E8308A001D594F /* PodcastResponse.swift */; };
+		ED180E8C28E830CE001D594F /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED180E8B28E830CE001D594F /* Podcast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		ED180E6C28E815D9001D594F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED180E6F28E815D9001D594F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED180E7128E815D9001D594F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED180E8628E82642001D594F /* iTunesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesAPI.swift; sourceTree = "<group>"; };
+		ED180E8928E8308A001D594F /* PodcastResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastResponse.swift; sourceTree = "<group>"; };
+		ED180E8B28E830CE001D594F /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,7 @@
 		ED180E7728E818BD001D594F /* App */ = {
 			isa = PBXGroup;
 			children = (
+				ED180E8428E82623001D594F /* Core */,
 				ED180E7C28E818F7001D594F /* Plists */,
 				ED180E7B28E818EC001D594F /* Views */,
 				ED180E7A28E818E3001D594F /* Assets */,
@@ -115,6 +122,7 @@
 		ED180E7D28E8190F001D594F /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				ED180E8828E83063001D594F /* Model */,
 				ED180E7E28E8191B001D594F /* Controller */,
 			);
 			path = Main;
@@ -126,6 +134,31 @@
 				ED180E6728E815D8001D594F /* MainViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		ED180E8428E82623001D594F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				ED180E8528E82630001D594F /* Network */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		ED180E8528E82630001D594F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				ED180E8628E82642001D594F /* iTunesAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		ED180E8828E83063001D594F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED180E8928E8308A001D594F /* PodcastResponse.swift */,
+				ED180E8B28E830CE001D594F /* Podcast.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +231,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED180E8A28E8308A001D594F /* PodcastResponse.swift in Sources */,
+				ED180E8728E82642001D594F /* iTunesAPI.swift in Sources */,
+				ED180E8C28E830CE001D594F /* Podcast.swift in Sources */,
 				ED180E6828E815D8001D594F /* MainViewController.swift in Sources */,
 				ED180E6428E815D8001D594F /* AppDelegate.swift in Sources */,
 				ED180E6628E815D8001D594F /* SceneDelegate.swift in Sources */,

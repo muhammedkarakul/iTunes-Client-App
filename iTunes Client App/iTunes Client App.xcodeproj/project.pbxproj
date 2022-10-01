@@ -56,15 +56,87 @@
 		ED180E6228E815D8001D594F /* iTunes Client App */ = {
 			isa = PBXGroup;
 			children = (
-				ED180E6328E815D8001D594F /* AppDelegate.swift */,
-				ED180E6528E815D8001D594F /* SceneDelegate.swift */,
-				ED180E6728E815D8001D594F /* ViewController.swift */,
-				ED180E6928E815D8001D594F /* Main.storyboard */,
-				ED180E6C28E815D9001D594F /* Assets.xcassets */,
-				ED180E6E28E815D9001D594F /* LaunchScreen.storyboard */,
-				ED180E7128E815D9001D594F /* Info.plist */,
+				ED180E7728E818BD001D594F /* App */,
+				ED180E7828E818C1001D594F /* Screens */,
 			);
 			path = "iTunes Client App";
+			sourceTree = "<group>";
+		};
+		ED180E7728E818BD001D594F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				ED180E7C28E818F7001D594F /* Plists */,
+				ED180E7B28E818EC001D594F /* Views */,
+				ED180E7A28E818E3001D594F /* Assets */,
+				ED180E7928E818DA001D594F /* Delegates */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		ED180E7828E818C1001D594F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				ED180E7D28E8190F001D594F /* Main */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		ED180E7928E818DA001D594F /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				ED180E6328E815D8001D594F /* AppDelegate.swift */,
+				ED180E6528E815D8001D594F /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		ED180E7A28E818E3001D594F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				ED180E6C28E815D9001D594F /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		ED180E7B28E818EC001D594F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED180E6E28E815D9001D594F /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ED180E7C28E818F7001D594F /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				ED180E7128E815D9001D594F /* Info.plist */,
+			);
+			path = Plists;
+			sourceTree = "<group>";
+		};
+		ED180E7D28E8190F001D594F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				ED180E7F28E81924001D594F /* View */,
+				ED180E7E28E8191B001D594F /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		ED180E7E28E8191B001D594F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ED180E6728E815D8001D594F /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ED180E7F28E81924001D594F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED180E6928E815D8001D594F /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

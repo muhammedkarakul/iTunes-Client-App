@@ -17,6 +17,7 @@
 		ED180E8A28E8308A001D594F /* PodcastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED180E8928E8308A001D594F /* PodcastResponse.swift */; };
 		ED180E8C28E830CE001D594F /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED180E8B28E830CE001D594F /* Podcast.swift */; };
 		ED3F0D9A28E9649100E21B48 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3F0D9928E9649100E21B48 /* UIImage+Extensions.swift */; };
+		ED3F0D9C28E96FCD00E21B48 /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3F0D9B28E96FCD00E21B48 /* CGFloat+Extensions.swift */; };
 		EDA9F61928E8537A00774EEB /* PodcastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA9F61828E8537A00774EEB /* PodcastCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		ED180E8928E8308A001D594F /* PodcastResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastResponse.swift; sourceTree = "<group>"; };
 		ED180E8B28E830CE001D594F /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
 		ED3F0D9928E9649100E21B48 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		ED3F0D9B28E96FCD00E21B48 /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
 		EDA9F61828E8537A00774EEB /* PodcastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				ED3F0D9928E9649100E21B48 /* UIImage+Extensions.swift */,
+				ED3F0D9B28E96FCD00E21B48 /* CGFloat+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				ED180E6828E815D8001D594F /* MainViewController.swift in Sources */,
 				ED180E8328E8258F001D594F /* MainView.swift in Sources */,
 				ED180E6428E815D8001D594F /* AppDelegate.swift in Sources */,
+				ED3F0D9C28E96FCD00E21B48 /* CGFloat+Extensions.swift in Sources */,
 				ED3F0D9A28E9649100E21B48 /* UIImage+Extensions.swift in Sources */,
 				ED180E6628E815D8001D594F /* SceneDelegate.swift in Sources */,
 				EDA9F61928E8537A00774EEB /* PodcastCollectionViewCell.swift in Sources */,

@@ -9,10 +9,16 @@ import UIKit
 
 final class MainView: UIView {
     // MARK: - Properties
+    private let cellInset: CGFloat = 8.0
+    private let cellMultiplier: CGFloat = 0.5
+    private var cellDimension: CGFloat {
+        .screenWidth * cellMultiplier - cellInset
+    }
     
     private lazy var flowLayout: UICollectionViewFlowLayout = {
         let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.itemSize = CGSize(width: 128.0, height: 128.0)
+        flowLayout.itemSize = CGSize(width: cellDimension,
+                                     height: cellDimension)
         return flowLayout
     }()
     

@@ -20,6 +20,7 @@ final class MainViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Podcasts"
         view = mainView
         mainView.setCollectionViewDelegate(self, andDataSource: self)
         fetchPodcasts()
@@ -54,12 +55,6 @@ extension MainViewController: UICollectionViewDataSource {
         let podcast = podcastResponse?.results?[indexPath.row]
         cell.title = podcast?.trackName
         cell.imageView.downloadImage(from: podcast?.artworkLarge)
-//        iTunesAPI.shared.downloadImage(from: podcast?.artworkLarge) { image, error in
-//            if let error = error {
-//                fatalError(error.localizedDescription)
-//            }
-//            cell.image = image
-//        }
         
         return cell
     }

@@ -11,6 +11,7 @@ final class MainViewController: UIViewController {
     
     // MARK: - Properties
     private let mainView = MainView()
+    private let networkService = BaseNetworkService()
     private var podcastResponse: PodcastResponse? {
         didSet {
             mainView.refresh()
@@ -28,11 +29,13 @@ final class MainViewController: UIViewController {
     
     // MARK: - Methods
     private func fetchPodcasts() {
-        iTunesAPI.shared.fetchPodcasts() { response, error in
-            if let error = error {
+        networkService.request(PodcastRequest()) { result in
+            switch result {
+            case .success(let response):
+                self.podcastResponse = response
+            case .failure(let error):
                 fatalError(error.localizedDescription)
             }
-            self.podcastResponse = response
         }
     }
 }

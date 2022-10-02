@@ -24,12 +24,18 @@ final class MainViewController: UIViewController {
         title = "Podcasts"
         view = mainView
         mainView.setCollectionViewDelegate(self, andDataSource: self)
+        
+        let searchController = UISearchController()
+        searchController.searchBar.placeholder = "Education, Fun..."
+        searchController.searchResultsUpdater = self
+        navigationItem.searchController = searchController
+        
         fetchPodcasts()
     }
     
     // MARK: - Methods
-    private func fetchPodcasts() {
-        networkService.request(PodcastRequest()) { result in
+    private func fetchPodcasts(with text: String = "Podcast") {
+        networkService.request(PodcastRequest(searchText: text)) { result in
             switch result {
             case .success(let response):
                 self.podcastResponse = response
@@ -68,3 +74,11 @@ extension MainViewController: UICollectionViewDataSource {
     }
 }
 
+// MARK: - UISearchResultsUpdating
+extension MainViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        if let text = searchController.searchBar.text, text.count > 1 {
+            fetchPodcasts(with: text)
+        }
+    }
+}

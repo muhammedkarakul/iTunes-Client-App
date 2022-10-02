@@ -77,6 +77,13 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		ED11A84628E9A1450036F7DE /* New */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = New;
+			sourceTree = "<group>";
+		};
 		ED180E5728E815D8001D594F = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +124,7 @@
 		ED180E7828E818C1001D594F /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				ED11A84628E9A1450036F7DE /* New */,
 				ED3F0D9D28E9768700E21B48 /* Detail */,
 				ED180E7D28E8190F001D594F /* Main */,
 			);

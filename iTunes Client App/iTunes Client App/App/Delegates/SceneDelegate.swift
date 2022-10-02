@@ -53,6 +53,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     private func setupWindow(with windowScene: UIWindowScene) {
         let window = UIWindow(windowScene: windowScene)
         let viewController = MainViewController()
+//        viewController.tabBarItem = UITabBarItem(title: <#T##String?#>, image: <#T##UIImage?#>, selectedImage: <#T##UIImage?#>)
         let navigationController = UINavigationController(rootViewController: viewController)
         let tabBarController = UITabBarController()
         tabBarController.viewControllers = [navigationController]

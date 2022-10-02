@@ -9,6 +9,8 @@ import Foundation
 
 struct PodcastRequest: DataRequest {
     
+    var searchText: String
+    
     var baseURL: String {
         "https://itunes.apple.com"
     }
@@ -18,11 +20,16 @@ struct PodcastRequest: DataRequest {
     }
     
     var queryItems: [String : String] {
-        ["term": "Podcast"]
+        ["term": searchText,
+         "media" : "podcast"]
     }
     
     var method: HTTPMethod {
         .get
+    }
+    
+    init(searchText: String = "Podcast") {
+        self.searchText = searchText
     }
     
     func decode(_ data: Data) throws -> PodcastResponse {

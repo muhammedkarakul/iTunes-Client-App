@@ -18,6 +18,8 @@
 		ED180E8C28E830CE001D594F /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED180E8B28E830CE001D594F /* Podcast.swift */; };
 		ED3F0D9A28E9649100E21B48 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3F0D9928E9649100E21B48 /* UIImage+Extensions.swift */; };
 		ED3F0D9C28E96FCD00E21B48 /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3F0D9B28E96FCD00E21B48 /* CGFloat+Extensions.swift */; };
+		ED3F0D9F28E9769A00E21B48 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3F0D9E28E9769A00E21B48 /* DetailViewController.swift */; };
+		ED3F0DA328E976EA00E21B48 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3F0DA228E976EA00E21B48 /* DetailView.swift */; };
 		EDA9F61928E8537A00774EEB /* PodcastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA9F61828E8537A00774EEB /* PodcastCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 		ED180E8B28E830CE001D594F /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
 		ED3F0D9928E9649100E21B48 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		ED3F0D9B28E96FCD00E21B48 /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
+		ED3F0D9E28E9769A00E21B48 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		ED3F0DA228E976EA00E21B48 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		EDA9F61828E8537A00774EEB /* PodcastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +93,7 @@
 		ED180E7828E818C1001D594F /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				ED3F0D9D28E9768700E21B48 /* Detail */,
 				ED180E7D28E8190F001D594F /* Main */,
 			);
 			path = Screens;
@@ -130,8 +135,8 @@
 		ED180E7D28E8190F001D594F /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				ED180E8128E82574001D594F /* View */,
 				ED180E8828E83063001D594F /* Model */,
+				ED180E8128E82574001D594F /* View */,
 				ED180E7E28E8191B001D594F /* Controller */,
 			);
 			path = Main;
@@ -187,6 +192,31 @@
 				ED3F0D9B28E96FCD00E21B48 /* CGFloat+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ED3F0D9D28E9768700E21B48 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				ED3F0DA128E976D500E21B48 /* View */,
+				ED3F0DA028E976D000E21B48 /* Controller */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		ED3F0DA028E976D000E21B48 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ED3F0D9E28E9769A00E21B48 /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ED3F0DA128E976D500E21B48 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED3F0DA228E976EA00E21B48 /* DetailView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		EDA9F61728E8535D00774EEB /* PodcastCollectionViewCell */ = {
@@ -267,6 +297,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED3F0D9F28E9769A00E21B48 /* DetailViewController.swift in Sources */,
+				ED3F0DA328E976EA00E21B48 /* DetailView.swift in Sources */,
 				ED180E8A28E8308A001D594F /* PodcastResponse.swift in Sources */,
 				ED180E8728E82642001D594F /* iTunesAPI.swift in Sources */,
 				ED180E8C28E830CE001D594F /* Podcast.swift in Sources */,

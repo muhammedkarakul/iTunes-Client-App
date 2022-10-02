@@ -40,7 +40,9 @@ final class MainViewController: UIViewController {
 // MARK: - UICollectionViewDelegate
 extension MainViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("\(indexPath.row)")
+        let detailViewController = DetailViewController()
+        detailViewController.podcast = podcastResponse?.results?[indexPath.row]
+        navigationController?.pushViewController(detailViewController, animated: true)
     }
 }
 
@@ -55,7 +57,6 @@ extension MainViewController: UICollectionViewDataSource {
         let podcast = podcastResponse?.results?[indexPath.row]
         cell.title = podcast?.trackName
         cell.imageView.downloadImage(from: podcast?.artworkLarge)
-        
         return cell
     }
     

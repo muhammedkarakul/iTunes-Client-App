@@ -20,7 +20,7 @@ final class PodcastCollectionViewCell: UICollectionViewCell {
         }
     }
     
-    private lazy var imageView = UIImageView()
+    private(set) lazy var imageView = UIImageView()
     private lazy var titleLabel = UILabel()
     
     override init(frame: CGRect) {
@@ -46,11 +46,5 @@ final class PodcastCollectionViewCell: UICollectionViewCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        image = nil
-        title = nil
     }
 }

@@ -53,27 +53,19 @@ extension MainViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! PodcastCollectionViewCell
         let podcast = podcastResponse?.results?[indexPath.row]
         cell.title = podcast?.trackName
-        iTunesAPI.shared.downloadImage(from: podcast?.artworkLarge) { image, error in
-            if let error = error {
-                fatalError(error.localizedDescription)
-            }
-            cell.image = image
-        }
-        return cell
-    }
-    
-//    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-//        guard let cell = cell as? PodcastCollectionViewCell else {
-//            return
-//        }
-//        let podcast = podcastResponse?.results?[indexPath.row]
-//        
+        cell.imageView.downloadImage(from: podcast?.artworkLarge)
 //        iTunesAPI.shared.downloadImage(from: podcast?.artworkLarge) { image, error in
 //            if let error = error {
 //                fatalError(error.localizedDescription)
 //            }
 //            cell.image = image
 //        }
-//    }
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        collectionView.reloadItems(at: [indexPath])
+    }
 }
 
